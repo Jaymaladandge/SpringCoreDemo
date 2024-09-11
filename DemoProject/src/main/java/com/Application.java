@@ -34,6 +34,36 @@ public class Application {
 	}
 }
 
+
+
+
+/*
+ 
+@Scope("prototype") indicates that a new instance of the bean should be created every time it is requested 
+from the Spring container. 
+ 
+ 
+In the Spring Framework, singleton-scoped beans are indeed created and initialized eagerly by default when the application 
+ context is created. Here's a detailed explanation of this behavior:
+
+Singleton Scope
+Definition:
+
+Singleton Scope: In Spring, the singleton scope means that a single instance of the bean is created and shared across the 
+entire Spring container. This is the default scope for beans if no scope is specified.
+
+
+Eager Initialization:
+
+Default Behavior: By default, Spring eagerly initializes singleton beans. This means that when the Spring application context is 
+created, Spring will instantiate and configure all singleton-scoped beans immediately during the context startup.
+Why Eager Initialization: Eager initialization ensures that all necessary beans are fully initialized and ready to be used 
+when the application context is fully set up. This approach is often useful because it guarantees that all singleton beans 
+are available and fully initialized when the application starts, avoiding any potential issues related to lazy initialization.
+ 
+ */
+
+
 /*
  
  the ApplicationContext is the central interface for providing configuration information to an application. 
